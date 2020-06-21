@@ -1,7 +1,8 @@
 <div id="sidebar">
     <div class="pages">
         <ul>
-            {% for item in site.pages %}
+            {% assign sorted_pages = site.pages | sort: "rorder" | reverse %}
+            {% for item in sorted_pages %}
                 {% assign url = item.url | relative_url %}
 
                 <li>
