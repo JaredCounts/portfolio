@@ -11,7 +11,7 @@ rorder: 13
 
 {% include vimeo-video.html video_id=165798784 %}
 
-[Materiable]("http://tangible.media.mit.edu/project/materiable/") is a combination of [Tangible Media Group](http://tangible.media.mit.edu/)'s shape shifting furniture and the world of computer graphics simulations.
+[Materiable](http://tangible.media.mit.edu/project/materiable/) is a combination of [Tangible Media Group](http://tangible.media.mit.edu/)'s shape shifting furniture and the world of computer graphics simulations.
 
 I co-authored the paper, ["Materiable: Rendering Dynamic Material Properties in Response to Direct Physical Touch with Shape Changing Interfaces"](http://tmg-trackr.media.mit.edu/publishedmedia/Papers/598-Materiable%20Rendering%20Dynamic%20Material/Published/PDF) (2016) with [Ken Nakagaki](http://ken-nakagaki.com/), [Luke Vink](http://www.lukevink.com/), and others. For this paper, we studied the emergent interaction that arises when real time and interactive physics is simulated on the (TRANSFORM)[{{ "/transform" | relative_url }}] and the (inFORM)[{{ "../inform" | relative_url }}]).
 
