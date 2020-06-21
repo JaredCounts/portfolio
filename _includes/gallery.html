@@ -1,0 +1,25 @@
+<h2>Gallery</h2>
+<h5>Click to view</h5>
+<ul class="gallery">
+{% assign image_dir_path = include.gallery_id | append: "/" %}
+    {% for asset in assets %}
+        {% capture path %}{{ asset[0] }}{% endcapture %}
+
+        {% if path contains image_dir_path %}
+            {% capture resolved_path %}{{ path | asset:"@path" }}{% endcapture %}
+
+            <li>
+                <a href="{{ resolved_path }}" data-lightbox="{{ include.gallery_id }}">
+                    <img src="{{ resolved_path }}" />
+                </a>
+                <noscript>
+                    <a href="{{ resolved_path }}">
+                        <img src="{{ resolved_path }}" />
+                    </a>
+                </noscript>
+            </li>
+
+        {% endif %}
+
+    {% endfor %}
+</ul>

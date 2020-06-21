@@ -1,0 +1,25 @@
+<div class="no-mobile">
+	<script>
+		var video_names = {{ include.video_names | jsonify }};
+		var video_sizes = {{ include.video_sizes | jsonify }};
+		var videos = [];
+
+		for (index = 0; index < video_names.length; index++) {
+			name = video_names[index];
+			size = video_sizes[index];
+			videos.push([size, name]);
+		}
+
+	</script>
+	<div class='gfywrap yesscript'>
+		<video autoplay controls muted="muted">
+			<source id='webm' src='' type='video/webm'>
+			<source id='mp4' src='' type='video/mp4'>
+		</video>
+	</div>
+	<div class='gfyback'></div>
+	<noscript><img src="renders/render (5).png" /></noscript>
+</div>
+<div class="mobile">
+	$$pic(renders/render (5).png)$$
+</div>

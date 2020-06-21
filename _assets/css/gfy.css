@@ -1,0 +1,20 @@
+.gfywrap {
+	display: none; /* enable via javascript */
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+}
+.gfywrap .gfyitem > div,
+.gfywrap .gfyitem .gfyPreLoadCanvas,
+.gfywrap .gfyitem .gfyVid,
+.gfywrap .gfyitem .gfyGif {
+    position: absolute !important;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100% !important;
+    height: 100% !important;
+   	margin-left: auto;
+	margin-right: auto;
+}
+.gfyback {
+	margin-bottom: 1em;
+}

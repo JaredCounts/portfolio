@@ -1,0 +1,31 @@
+url: "http://jaredcounts.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Jared Counts" # the name of your site, e.g. ACME Corp.
+
+markdown: CommonMark
+commonmark:
+    options: ["UNSAFE", "SMART"]
+
+header_links: 
+  - 
+    title: About
+    url: /about.html
+  - 
+    title: Resume
+    url: resume.pdf
+  - 
+    title: Email
+    url: countsjared@gmail.com
+
+assets:
+  sources:
+    - _assets/css
+    - _assets/js
+    - _assets/image/lightbox
+    - _assets/pics
+    - _assets/thumbnails
+
+collections:
+    pages:
+      output: true
+      permalink: /:path/

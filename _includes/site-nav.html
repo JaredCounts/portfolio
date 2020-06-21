@@ -1,0 +1,14 @@
+<div id="sidebar">
+    <div class="pages">
+        <ul>
+            {% for item in site.pages %}
+                {% assign url = item.url | relative_url %}
+
+                <li>
+                    <a href="{{ url }}"><h4>{{ item.title }}</h4></a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<div id="cleared"></div>

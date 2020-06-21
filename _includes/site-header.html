@@ -1,0 +1,22 @@
+<header>
+<div class="topbar">
+    <div id="inner-topbar">
+        <a href="/"><h1>Jared Counts</h1></a>
+        <div class="main">
+            <ul>
+                {% for item in site.header_links %}
+                    {% if item.url contains '@' %}
+                        {% assign url = item.url | prepend: "mailto:" %}
+                    {% else %}
+                        {% assign url = item.url | relative_url %}
+                    {% endif %}
+                    <li>
+                        <a href="{{ url }}"><h3>{{ item.title }}</h3></a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+</header>
+

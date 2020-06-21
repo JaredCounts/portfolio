@@ -1,0 +1,20 @@
+---
+title: Jared Counts
+layout: default
+custom_css: homepage
+custom_js: homepage
+---
+
+<ul>
+{% assign sorted_pages = site.pages | sort: "rorder" | reverse %}
+{% for item in sorted_pages %}
+    <li>
+        <a href="{{item.url | relative_url}}">
+            {{item.thumbnail | asset:"class='thumbimage'"}}
+            <div class=""></div>
+            <h4>{{item.title}}</h4>
+            <h5>{{item.subtitle}}</h5>
+        </a>
+    </li>
+{% endfor %}
+</ul>
