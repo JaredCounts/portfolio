@@ -4,16 +4,15 @@
         <a href="/"><h1>Jared Counts</h1></a>
         <div class="main">
             <ul>
-                {% for item in site.header_links %}
-                    {% if item.url contains '@' %}
-                        {% assign url = item.url | prepend: "mailto:" %}
-                    {% else %}
-                        {% assign url = item.url | relative_url %}
-                    {% endif %}
-                    <li>
-                        <a href="{{ url }}"><h3>{{ item.title }}</h3></a>
-                    </li>
-                {% endfor %}
+                <li>
+                    <h3><a href="/about.html">About</a></h3>
+                </li>
+                <li>
+                    <h3><a href="{% asset resume.pdf @path %}">Resume</a></h3>
+                </li>
+                <li>
+                    <h3><a href="mailto:countsjared@gmail.com">Email</a></h3>
+                </li>
             </ul>
         </div>
     </div>

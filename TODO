@@ -5,7 +5,6 @@ Todo
 - revise pages
 - "pages" -> "projects"
 - add articles
-- upload resume
 - add link to Linkedin? Github?
 - backup the gfycat videos
 - upload to github
@@ -13,3 +12,4 @@ Todo
 - add low-res versions of images (I think there's a proper Jekyll way of doing this?)
 - add a footer (or at least some extra space on the bottom)
 - minify js/css
+- add a "CV" page with more detail on past experience

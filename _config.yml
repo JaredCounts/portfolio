@@ -6,17 +6,6 @@ markdown: CommonMark
 commonmark:
     options: ["UNSAFE", "SMART"]
 
-header_links: 
-  - 
-    title: About
-    url: /about.html
-  - 
-    title: Resume
-    url: resume.pdf
-  - 
-    title: Email
-    url: countsjared@gmail.com
-
 assets:
   sources:
     - _assets/css
@@ -25,6 +14,7 @@ assets:
     - _assets/pics
     - _assets/thumbnails
     - _assets/favicons
+    - _assets/files
 
 collections:
     pages:
