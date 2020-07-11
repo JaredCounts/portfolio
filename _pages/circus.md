@@ -9,23 +9,20 @@ custom_css: [gfy, lightbox, app]
 rorder: 2
 ---
 <div id="app"></div>
-<!-- {% capture video %}
-    {% assign videos = "AcceptableDeliciousBlueandgoldmackaw,RipeDarlingHarvestmouse,CourteousMixedGerbil" | split: "," %}
-    {% assign sizes = "giant,giant,giant" | split: "," %}
-    {% include gfy-video.html video_names=videos video_sizes=sizes %}
-{% endcapture %}
-{{ video | strip_newlines | strip }} -->
 
-I built Circus Fluid in the summer of 2011. At its core, it's a 2D wave simulator. 
+Click and drag to interact.
 
-Circus fluid works by having a 2D grid of springs that each represents the depth of any given pixel. Each spring pulls and pushes with those adjacent to itself.
-So when a force is applied to any given pixel, the force propagates outward to other springs during each timestep.
+[Click here for a full-screen demo.](demo.html)
 
-The coloring of each pixel is somewhat arbitrary. The height determines the brightness, and the hue is the "velocity" of each spring feeding into a sine function.
+[The full source can be found on Github.](https://github.com/JaredCounts/CircusFluid)
 
-If you have Java installed, you can view and play with the <a href="http://www.openprocessing.org/sketch/29833" target="_blank">Circus Fluid applet at OpenProcessing</a>.
+Circus fluid was originally a Processing app I wrote back in 2011. The idea was to turn a simple wave simulation algorithm into something more artsy/colorful.
 
-Otherwise, you can also view the <a href="http://www.openprocessing.org/sketch/29833" target="_blank">Circus Fluid's source code at the same website</a>.
+At the time, the resulting app ended up being somewhat of a fluke. If I recall correctly, I borrowed from the pseudocode in [Matthias Mueller-Fischer's "Fast Wave Simulation for Games Using Height Fields" GDC presentation from 2008](http://twvideo01.ubm-us.net/o1/vault/gdc08/slides/S6509i1.pdf), but there's was a syntax error in my code.
+
+The results ended up looking pretty neat, and I've more recently had a tough time replicating the effect by using the wave equations with the correct syntax.
+
+Here is the basic idea behind the wave equations. Pretend the brightness of each pixel is the height of a column of water. For a pixel and its adjacent neighbor, use Hooke's law to compute the spring force pulling that pixel towards its neighbor's height. That's pretty much it. In my app, that force is used to update the velocity, which is then integrated into the height (or "density") of the pixel.
 
 {% capture gallery %}
     {% include gallery.html gallery_id="circus" %}

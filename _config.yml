@@ -29,3 +29,6 @@ collections:
     pages:
       output: true
       permalink: /:path/
+    demos:
+      output: true
+      permalink: /:path/demo
