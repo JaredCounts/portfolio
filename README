@@ -2,17 +2,22 @@ Bash command to fix filenames (from "Render (0).png" to "render0.png"):
     count=0; for i in ./* ; do mv "$i" "render$count.png" ; ((count++)) ; done
 
 To build
-    bundle exec jekyll build --verbose
+```
+$ bundle exec jekyll build --verbose
+```
 
 To run
-    bundle exec jekyll serve
+```
+$ bundle exec jekyll serve
+```
 
 To update gems/dependencies
-    bundle update
-    bundle install
+```
+$ bundle update
+$ bundle install
+```
 
 Todo
-- make it responsive
 - add a Pixar page
 - music visualizer
 - rewrite About
@@ -29,4 +34,3 @@ Todo
 - add low-res versions of images (I think there's a proper Jekyll way of doing this?)
 - add a footer (or at least some extra space on the bottom)
 - minify js/css
-- open source the projects??
