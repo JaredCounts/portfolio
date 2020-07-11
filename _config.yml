@@ -24,6 +24,7 @@ assets:
     - _assets/image/lightbox
     - _assets/pics
     - _assets/thumbnails
+    - _assets/favicons
 
 collections:
     pages:

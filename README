@@ -29,7 +29,6 @@ Todo
 - backup the gfycat videos
 - analytics
 - upload to github
-- favicons
 - add lazy loading for images?
 - add low-res versions of images (I think there's a proper Jekyll way of doing this?)
 - add a footer (or at least some extra space on the bottom)
