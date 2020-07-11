@@ -18,9 +18,7 @@ Click and drag to interact.
 
 Circus fluid was originally a Processing app I wrote back in 2011. The idea was to turn a simple wave simulation algorithm into something more artsy/colorful.
 
-At the time, the resulting app ended up being somewhat of a fluke. If I recall correctly, I borrowed from the pseudocode in [Matthias Mueller-Fischer's "Fast Wave Simulation for Games Using Height Fields" GDC presentation from 2008](http://twvideo01.ubm-us.net/o1/vault/gdc08/slides/S6509i1.pdf), but there's was a syntax error in my code.
-
-The results ended up looking pretty neat, and I've more recently had a tough time replicating the effect by using the wave equations with the correct syntax.
+If I recall correctly, I borrowed from the pseudocode in [Matthias Mueller-Fischer's "Fast Wave Simulation for Games Using Height Fields" GDC presentation from 2008](http://twvideo01.ubm-us.net/o1/vault/gdc08/slides/S6509i1.pdf). The original source of my implementation had a syntax bug in the update logic that still ended up giving pretty good results. It's fixed in my re-implementation, but the behavior is a bit different now.
 
 Here is the basic idea behind the wave equations. Pretend the brightness of each pixel is the height of a column of water. For a pixel and its adjacent neighbor, use Hooke's law to compute the spring force pulling that pixel towards its neighbor's height. That's pretty much it. In my app, that force is used to update the velocity, which is then integrated into the height (or "density") of the pixel.
 
