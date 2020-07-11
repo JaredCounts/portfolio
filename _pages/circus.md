@@ -4,16 +4,17 @@ title:  "Circus Fluid"
 date:   2020-06-14 13:04:22 -0700
 thumbnail: "circus-thumb.png"
 subtitle: "Colorful wave toy"
-custom_js: [gfy, lightbox]
-custom_css: [gfy, lightbox]
+custom_js: [gfy, lightbox, circus]
+custom_css: [gfy, lightbox, app]
 rorder: 2
 ---
-{% capture video %}
+<div id="app"></div>
+<!-- {% capture video %}
     {% assign videos = "AcceptableDeliciousBlueandgoldmackaw,RipeDarlingHarvestmouse,CourteousMixedGerbil" | split: "," %}
     {% assign sizes = "giant,giant,giant" | split: "," %}
     {% include gfy-video.html video_names=videos video_sizes=sizes %}
 {% endcapture %}
-{{ video | strip_newlines | strip }}
+{{ video | strip_newlines | strip }} -->
 
 I built Circus Fluid in the summer of 2011. At its core, it's a 2D wave simulator. 
 

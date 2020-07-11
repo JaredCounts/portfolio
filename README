@@ -12,6 +12,7 @@ To update gems/dependencies
     bundle install
 
 Todo
+- make it responsive
 - add a Pixar page
 - music visualizer
 - rewrite About
