@@ -4,16 +4,18 @@ title:  "Balls"
 date:   2010-06-14 13:04:22 -0700
 thumbnail: "balls-thumb.png"
 subtitle: "Ball pit simulator"
-custom_js: [gfy, lightbox]
-custom_css: [gfy, lightbox]
+custom_js: [gfy, lightbox, balls]
+custom_css: [gfy, lightbox, app]
 rorder: 1
 ---
-{% capture video %}
-    {% assign videos = "WelllitHairyCardinal" | split: "," %}
-    {% assign sizes = "giant" | split: "," %}
-    {% include gfy-video.html video_names=videos video_sizes=sizes %}
-{% endcapture %}
-{{ video | strip_newlines | strip }}
+<div id="app"></div>
+
+Click and drag to interact.
+
+[Click here for a full-screen demo.](demo.html)
+
+[The full source can be found on Github.](https://github.com/JaredCounts/BallPit)
+
 
 This first version of "Balls" came around September, 2010. My goal was to make a ball-pit physics engine that was fast and robust.
 
