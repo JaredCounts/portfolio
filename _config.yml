@@ -23,3 +23,4 @@ collections:
     demos:
       output: true
       permalink: /:path/demo
+theme: jekyll-theme-cayman
